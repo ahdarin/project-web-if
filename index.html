@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/unand.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Website Resmi Departemen Informatika Unviersitas Andalas</title>
+</head>
+<body>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="container-fluid mx-auto d-block rounded-2 p-3">
+          <div class="form">
+            <form id="myForm" onsubmit="showAlert(); return false;">
+              <label for="nama" class="form-label mt-2">Name/Alias:</label>
+               <input type="text" id="nama" name="nama" class="form-control" placeholder="Enter your name" required>
+  
+              <label for="email" class="form-label mt-2">Email:</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+  
+              <label for="pesan" class="form-label mt-2">Message:</label>
+              <textarea class="form-control" rows="5" id="pesan" name="text" placeholder="Enter messages..."></textarea>
+
+              <div class="radio-group mt-2">
+                <label>Would you like to receive a reply?</label>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio1" name="balasan" value="ya" required>
+                  <label class="form-check-label" for="radio1">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio2" name="balasan" value="tidak" checked required>
+                  <label class="form-check-label" for="radio2">No</label>
+                </div>
+              </div>
+
+              <div class="submit mt-2">
+                <button type="submit" class="btn btn-light">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <div id="main">
+      <button id="openButton" onclick="openNav()">Hubungi Kami</button>
+
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logoIF" src="assets/logoIF.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Profil</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
+                  <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+                  <li><a class="dropdown-item" href="#">Dosen dan Tenaga Pengajar </a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Akademik</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Info Akademik</a></li>
+                  <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
+                  <li><a class="dropdown-item" href="#">Kurikulum</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="berita.html">Berita</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kemahasiswaan</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Info Kemahasiswaan</a></li>
+                  <li><a class="dropdown-item" href="#">Prestasi Mahasiswa</a></li>
+                  <li><a class="dropdown-item" href="#">Hima Informatika</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search" style="font-size: 14px;">
+              <button class="btn btn-search" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div id="content">
+      <div class="profil">
+          <div class="profiltext">
+              <h2>Departemen Informatika</h2>
+              <p>Program Studi Informatika Universitas Andalas memiliki visi untuk menjadi Program Studi Informatika yang bereputasi nasional dan bermartabat di bidang Informatika pada tahun 2028.</p>
+              <div class="jumlah">
+                  <div class="item">
+                      <img src="assets/mhs.png" alt="mahasiswa" class="logoawal">
+                      <h5>113</h5>
+                      <p>Mahasiswa Aktif</p>
+                  </div>
+                  <div class="item">
+                      <img src="assets/dosen.png" alt="dosen" class="logoawal">
+                      <h5>11</h5>
+                      <p>Dosen Tetap</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <h2 class="subjudul">Kata Sambutan Kepala Departemen</h2>
+      <div class="row subcontent">
+          <div class="col-sm-2 fotosambutan">
+            <img src="assets/profil.png" alt="profil" class="">
+          </div>
+          <div class="col-sm-10">
+            <p class="sambutan">Selamat datang di website resmi Departemen Informatika Universitas Andalas. Website ini kami hadirkan sebagai jendela informasi sekaligus media komunikasi untuk seluruh civitas akademika, alumni, mitra, dan masyarakat luas. Di era digital ini, kami menyadari pentingnya kehadiran platform informasi yang dapat diakses dengan mudah, cepat, dan relevan.</p>
+            <p class="sambutan">Departemen Informatika Universitas Andalas memiliki komitmen untuk terus meningkatkan mutu pendidikan, penelitian, dan pengabdian kepada masyarakat. Melalui website ini, kami berharap dapat memberikan gambaran tentang berbagai program, kegiatan, dan pencapaian yang telah diraih, serta rencana pengembangan yang akan dilakukan di masa mendatang.</p>  
+            <p class="sambutan">Kami senantiasa berupaya melengkapi informasi di web ini agar dapat memberikan manfaat secara luas. Oleh karena itu, kritik dan saran dari pengunjung sangat kami harapkan untuk terus memperbaiki dan menyempurnakan layanan yang kami berikan.</p>
+          </div>
+      </div>
+
+      <hr>
+
+      <h2 class="subjudul">Berita dan Peristiwa</h2>
+      <div class="berita">
+        <div class="card">
+          <img class="card-img-top" src="assets/news.png" alt="Foto Berita">
+          <div class="card-body">
+            <h4 class="card-title">Judul Berita 1</h4>
+            <p class="card-text tanggal">25 Agustus 2025</p>
+            <div class="isiberita">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur cumque ducimus temporibus, non quae hic, quidem maxime tempora accusantium mollitia dolorem dolores eos labore architecto aliquam aperiam doloribus consequuntur.</p>
+            </div>
+            <div class="text-center">
+            <a href="#" class="btn bacaberita">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="assets/news.png" alt="Foto Berita">
+          <div class="card-body">
+            <h4 class="card-title">Judul Berita 2</h4>
+            <p class="card-text tanggal">25 Juni 2025</p>
+            <div class="isiberita">
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, distinctio. Soluta recusandae pariatur, nisi, nulla quaerat, doloribus debitis suscipit nihil eos sapiente consequuntur. Mollitia, cumque repudiandae! Quod qui non illum.</p>
+            </div>
+            <div class="text-center">
+              <a href="#" class="btn bacaberita">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="assets/news.png" alt="Foto Berita">
+          <div class="card-body">
+            <h4 class="card-title">Judul Berita 3</h4>
+            <p class="card-text tanggal">15 Desember 2024</p>
+            <div class="isiberita">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, repellendus? Id, repellendus. Doloremque, unde cumque hic eum earum sequi aliquam aliquid laudantium officia ipsam accusantium explicabo fugit ad velit cum!</p>
+            </div>
+            <div class="text-center">
+              <a href="#" class="btn bacaberita">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="berita.html" class="lainnya">Berita Lainnya</a>
+      </div>
+      <hr>
+
+      <h2 class="subjudul">Video Profil Departemen Informatika</h2>
+      <div class="vidyt">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kVaftlWa6Lo?si=B-36S1eZN46-Dhzt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="logo mx-auto d-block">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+         <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="row">
+          <div class="col-sm-4 footerkiri">
+              <a class="navbar-brand" href="index.html"><img class="logoIFbawah" src="assets/logoIF.png" alt=""></a>
+              <p>Fakultas Teknologi Informasi, Universitas Andalas Kampus Limau Manis, Kec. Pauh, Kota Padang, Sumatera Barat 25163</p>
+              <p>Telepon : (0751) 9824667</p>
+              <p>Email : sekretariat@it.unand.ac.id</p>
+              <p>if.fti.unand.ac.id</p>
+          </div>
+  
+          <div class="col-sm-4 footertengah">
+              <h6 class="web-terkait">Website Terkait</h6>
+              <a href="www.unand.ac.id">Universitas Andalas</a>
+              <a href="fti.unand.ac.id">Fakultas Teknologi Informasi</a>
+              <a href="himaif.lmp.web.id">Hima Informatika</a>
+              <a href="#">Laboratorium Pemrograman dan Informatika</a>
+          </div>
+  
+          <div class="col-sm-4 footerkanan">
+              <p class="copyright">©2024 Ahda Rindang Al-Amin 2311531003, Departemen Informatika, FTI, UNAND</p>
+              
+              <p class="pengunjung">Pengunjung Hari Ini: 1.201, Kemarin: 2.312, Minggu Ini: 5.432, Bulan Ini: 32.121, Total: 123.232</p>
+          </div>
+      </div>
+    </footer>
+    
+    <button id="back-to-top" onclick="topFunction()"><i class="fa-solid fa-angle-up fa-lg"></i></button>
+
+  </div>
+</body>
+</html>
